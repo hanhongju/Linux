@@ -1,4 +1,4 @@
-apt     -y    install brasero rhythmbox vlc net-tools
+apt     -y    install brasero rhythmbox vlc net-tools libreoffice
 echo    '
 0 1 * * *     apt           -y          update
 0 2 * * *     apt           -y          full-upgrade
