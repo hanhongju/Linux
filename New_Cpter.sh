@@ -1,9 +1,4 @@
-apt update
-apt -y install brasero rhythmbox totem
-
-
-
-
+apt     -y    install brasero rhythmbox vlc
 echo    '
 0 1 * * *     apt           -y          update
 0 2 * * *     apt           -y          full-upgrade
