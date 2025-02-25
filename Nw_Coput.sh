@@ -40,4 +40,4 @@ crontab       -l
 
 
 
-# Ubuntu 新电脑安装软件
+# Ubuntu 24 新电脑安装软件
