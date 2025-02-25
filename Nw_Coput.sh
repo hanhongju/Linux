@@ -1,5 +1,3 @@
-cp /etc/apt/sources.list.d/ubuntu.sources /etc/apt/sources.list.d/ubuntu.sources.bak
-
 echo '
 Types: deb
 URIs: http://mirrors.ustc.edu.cn/ubuntu/
@@ -27,6 +25,9 @@ Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 ' > /etc/apt/sources.list.d/ubuntu.sources
 
 apt update
+
+
+
 
 apt     -y    install brasero rhythmbox vlc net-tools libreoffice
 echo    '
