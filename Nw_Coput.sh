@@ -4,7 +4,7 @@ echo    '
 0 2 * * *     apt           -y          full-upgrade
 0 3 * * *     apt           -y          autoremove
 '       |     crontab
-crontab -l
+crontab       -l
 
 
 
