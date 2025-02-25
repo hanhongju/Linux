@@ -1,3 +1,4 @@
+cp /etc/apt/sources.list.d/ubuntu.sources /etc/apt/sources.list.d/ubuntu.sources.bak
 
 echo '
 Types: deb
