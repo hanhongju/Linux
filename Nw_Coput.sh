@@ -40,4 +40,5 @@ netstat       -plnt
 
 
 
+
 # Ubuntu 24 新电脑安装软件
