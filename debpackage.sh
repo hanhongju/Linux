@@ -6,4 +6,10 @@ dpkg   -i    v2rayN-linux-64.deb
 
 
 
-# 安装v2rayN @ Ubuntu 24.04.2 LTS
+curl   -L    -O    https://dldir1v6.qq.com/weixin/Universal/Linux/WeChatLinux_x86_64.deb
+dpkg   -i    WeChatLinux_x86_64.deb
+
+
+
+
+# deb包安装 @ Ubuntu 24.04.2 LTS
