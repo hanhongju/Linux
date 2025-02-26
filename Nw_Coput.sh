@@ -29,7 +29,7 @@ apt update
 
 
 
-apt     -y    install brasero rhythmbox vlc net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn hashdeep p7zip-full samba
+apt     -y    install brasero rhythmbox vlc net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn hashdeep p7zip-full
 echo    '
 0 1 * * *     apt           -y          update
 0 2 * * *     apt           -y          full-upgrade
