@@ -1,5 +1,5 @@
 apt    -y       install  curl
-curl   --socks5-hostname    127.0.0.1:8000    \
+curl   --socks5-hostname    127.0.0.1:8000           \
        --remote-name   --location  --continue-at -   \
        https://github.com/2dust/v2rayN/releases/download/7.9.3/v2rayN-linux-64.deb
 dpkg   -i       v2rayN-linux-64.deb
