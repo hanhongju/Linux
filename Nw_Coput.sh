@@ -36,7 +36,7 @@ echo    '
 0 3 * * *     apt           -y          autoremove
 '       |     crontab
 crontab       -l
-
+netstat       -plnt
 
 
 
