@@ -1,13 +1,13 @@
-apt    -y    install  curl
-curl   -L    --socks5-hostname    127.0.0.1:8000  \
-       -O    https://github.com/2dust/v2rayN/releases/download/7.9.3/v2rayN-linux-64.deb
-dpkg   -i    v2rayN-linux-64.deb
+apt    -y       install  curl
+curl   --socks5-hostname    127.0.0.1:8000  \
+       -LOC -   https://github.com/2dust/v2rayN/releases/download/7.9.3/v2rayN-linux-64.deb
+dpkg   -i       v2rayN-linux-64.deb
 
 
 
 
-curl   -L    -O    https://dldir1v6.qq.com/weixin/Universal/Linux/WeChatLinux_x86_64.deb
-dpkg   -i    WeChatLinux_x86_64.deb
+curl   -LOC -   https://dldir1v6.qq.com/weixin/Universal/Linux/WeChatLinux_x86_64.deb
+dpkg   -i       WeChatLinux_x86_64.deb
 
 
 
