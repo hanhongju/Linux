@@ -1,3 +1,4 @@
+apt    -y   update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   full-upgrade   &&   apt   -y   autoremove
 apt    -y   install  curl
 curl        --socks5-hostname    127.0.0.1:8000           \
             --location           --continue-at -          \
