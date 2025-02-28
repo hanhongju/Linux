@@ -9,6 +9,8 @@ Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 apt update
 
 
+
+
 ubuntu-drivers autoinstall
 dpkg    -a     --configure
 apt     -y     install wget curl brasero rhythmbox vlc net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn
