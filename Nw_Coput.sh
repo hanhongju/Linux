@@ -10,17 +10,17 @@ apt update
 
 
 ubuntu-drivers autoinstall
-dpkg    -a    --configure
-apt     -y    install wget curl brasero rhythmbox vlc net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn
-apt     -y    install hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils
-apt     -y    install steam
-snap          install firefox
+dpkg    -a     --configure
+apt     -y     install wget curl brasero rhythmbox vlc net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn
+apt     -y     install hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils
+apt     -y     install steam
+snap           install firefox
 echo    '
-0 1 * * *     apt           -y          update
-0 2 * * *     apt           -y          full-upgrade
-0 3 * * *     apt           -y          autoremove
-'       |     crontab
-netstat       -plnt
+0 1 * * *      apt           -y          update
+0 2 * * *      apt           -y          full-upgrade
+0 3 * * *      apt           -y          autoremove
+'       |      crontab
+netstat        -plnt
 
 
 
