@@ -16,6 +16,7 @@ dpkg    -a     --configure
 apt     -y     install wget curl brasero rhythmbox vlc net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn
 apt     -y     install hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils steam
 snap           install firefox
+apt     -y     autoremove
 echo    '
 0 1 * * *      apt           -y          update
 0 2 * * *      apt           -y          full-upgrade
