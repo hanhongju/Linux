@@ -15,7 +15,7 @@ ubuntu-drivers autoinstall
 dpkg    -a     --configure
 apt     -y     install wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn
 apt     -y     install hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils steam thunderbird
-apt     -y     install r-base handbrake libcurl4-openssl-dev software-properties-common dirmngr
+apt     -y     install handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base
 snap           install firefox
 apt     -y     autoremove
 echo    '
