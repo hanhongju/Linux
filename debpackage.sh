@@ -1,5 +1,5 @@
 apt    -y   update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   full-upgrade   &&   apt   -y   autoremove
-apt    -y   install  curl
+apt    -y   install  curl r-base
 curl        --socks5-hostname    127.0.0.1:8000           \
             --location           --continue-at -          \
             --remote-name        https://github.com/2dust/v2rayN/releases/download/7.9.3/v2rayN-linux-64.deb   \
