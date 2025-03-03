@@ -28,4 +28,4 @@ netstat        -plnt
 
 
 
-# Ubuntu 24.04.2 LTS 新电脑安装软件
+# 新电脑安装软件 @ Ubuntu 24.04.2 LTS
