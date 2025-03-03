@@ -1,10 +1,12 @@
-echo '
-Types: deb
+echo   'Types: deb
 URIs: http://mirrors.ustc.edu.cn/ubuntu/ http://mirrors.aliyun.com/ubuntu/ http://mirrors.163.com/ubuntu/ http://mirrors.tuna.tsinghua.edu.cn/ubuntu/
 Suites: noble noble-updates noble-security
 Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 '       >     /etc/apt/sources.list.d/ubuntu.sources
+echo    'deb https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'     >    /etc/apt/sources.list.d/cran40.list
+wget    https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc    -O    /etc/apt/trusted.gpg.d/cran40.asc
+
 
 apt update
 
