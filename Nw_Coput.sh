@@ -26,9 +26,6 @@ echo    '
 0 2 * * *      apt           -y          full-upgrade
 0 3 * * *      apt           -y          autoremove
 '       |      crontab
-sed            -i        "/vmhgfs/d"       /etc/fstab
-#  mount       .host:/  /mnt/  --types fuse.vmhgfs-fuse  --options allow_other
-echo          '.host:/  /mnt/  fuse.vmhgfs-fuse  allow_other  0  0'  >>  /etc/fstab
 netstat        -plnt
 
 
