@@ -5,4 +5,4 @@ echo          '.host:/  /mnt/  fuse.vmhgfs-fuse  allow_other  0  0'  >>  /etc/fs
 
 
 
-# 开启VMware虚拟机共享文件夹
+# 开启VMware虚拟机共享文件夹 @ Ubuntu 24.04.2 LTS
