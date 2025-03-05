@@ -27,7 +27,7 @@ echo    '
 0 3 * * *      apt           -y          autoremove
 '       |      crontab
 sed            -i        "/vmhgfs/d"       /etc/fstab
-echo           '.host:/ /mnt/ fuse.vmhgfs-fuse allow_other defaults 0 0'   >>  /etc/fstab
+echo           '.host:/  /mnt/  fuse.vmhgfs-fuse  allow_other  0  0'  >>  /etc/fstab
 netstat        -plnt
 
 
