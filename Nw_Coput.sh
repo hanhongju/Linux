@@ -20,7 +20,6 @@ apt     -y     install wget curl brasero rhythmbox smplayer net-tools libreoffic
 apt     -y     install hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils steam thunderbird
 apt     -y     install handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre
 apt     -y     autoremove
-chmod   777    --recursive   /usr/lib/R/library/
 echo    '
 0 1 * * *      apt           -y          update
 0 2 * * *      apt           -y          full-upgrade
