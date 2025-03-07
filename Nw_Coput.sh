@@ -5,8 +5,8 @@ Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 '       >     /etc/apt/sources.list.d/ubuntu.sources
 # Comprehensive R Archive Network mirror sources
-wget    https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc    -O    /etc/apt/trusted.gpg.d/cran40.asc
-echo    'deb https://mirrors.tuna.tsinghua.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'     >    /etc/apt/sources.list.d/cran40.list
+wget    https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc    -O    /etc/apt/trusted.gpg.d/cran40.asc
+echo    'deb https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'     >    /etc/apt/sources.list.d/cran40.list
 
 
 apt update
