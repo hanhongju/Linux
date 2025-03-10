@@ -15,8 +15,4 @@ DEBIAN_FRONTEND=noninteractive   apt   -y   install   ./v2rayN-linux-64.deb   ./
 
 
 
---arg-file
-xargs   --max-args   1   --max-procs   10   --arg-file   download.txt   \
-curl    --socks5-hostname   127.0.0.1:8000  --location   --continue-at -    --remote-name   
-
 # deb包安装 @ Ubuntu 24.04.2 LTS
