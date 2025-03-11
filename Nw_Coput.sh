@@ -5,8 +5,11 @@ Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 '       >     /etc/apt/sources.list.d/ubuntu.sources
 # Comprehensive R Archive Network mirror sources
-wget    https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc    -O    /etc/apt/trusted.gpg.d/cran40.asc
+wget    --continue   https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc   --directory-prefix    /etc/apt/trusted.gpg.d/
+wget    --continue   https://packages.microsoft.com/keys/microsoft.asc    --directory-prefix    /etc/apt/trusted.gpg.d/
+
 echo    'deb https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'     >    /etc/apt/sources.list.d/cran40.list
+echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/ stable main'     >    /etc/apt/sources.list.d/vscode.list
 
 
 apt update
@@ -14,10 +17,11 @@ apt update
 
 
 
+
 ubuntu-drivers autoinstall
 dpkg    -a     --configure
 apt     -y     install wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn
-apt     -y     install hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils steam thunderbird
+apt     -y     install hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils steam thunderbird code
 apt     -y     install handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre
 apt     -y     autoremove
 echo    '
