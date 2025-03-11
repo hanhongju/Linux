@@ -5,15 +5,17 @@ Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 '       >     /etc/apt/sources.list.d/ubuntu.sources
 # Comprehensive R Archive Network mirror sources
-wget    --continue   https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc   --directory-prefix    /etc/apt/trusted.gpg.d/
-wget    --continue   https://packages.microsoft.com/keys/microsoft.asc    --directory-prefix    /etc/apt/trusted.gpg.d/
-
-echo    'deb https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'     >    /etc/apt/sources.list.d/cran40.list
+echo    'deb https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'                     >    /etc/apt/sources.list.d/cran40.list
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/ stable main'     >    /etc/apt/sources.list.d/vscode.list
+echo    '
+https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc
+https://packages.microsoft.com/keys/microsoft.asc
+'       >      trustedkey.txt
+xargs   --max-args 1    --max-procs 10        --arg-file    trustedkey.txt    \
+wget    --continue      --directory-prefix    /etc/apt/trusted.gpg.d/
 
 
 apt update
-
 
 
 
