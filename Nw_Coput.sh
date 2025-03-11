@@ -22,9 +22,8 @@ apt update
 
 ubuntu-drivers autoinstall
 dpkg    -a     --configure
-DEBIAN_FRONTEND=noninteractive    \
-apt     -y     install    wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn code \
-                          hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils steam thunderbird  \
+apt     -y     install    wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
+                          hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils steam thunderbird code  \
                           handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre
 apt     -y     autoremove
 echo    '
