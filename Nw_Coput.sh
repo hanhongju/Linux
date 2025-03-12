@@ -18,16 +18,12 @@ wget    --continue      --directory-prefix    /etc/apt/trusted.gpg.d/
 echo    'deb https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'                     >    /etc/apt/sources.list.d/cran40.list
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/ stable main'     >    /etc/apt/sources.list.d/vscode.list
 apt     update
-
-
-
-
-ubuntu-drivers autoinstall
 dpkg    -a     --configure
 apt     -y     install    wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
                           hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils steam thunderbird code  \
                           handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre
 apt     -y     autoremove
+ubuntu-drivers autoinstall
 echo    '
 0 1 * * *      apt           -y          update
 0 2 * * *      apt           -y          full-upgrade
