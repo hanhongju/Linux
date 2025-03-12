@@ -4,7 +4,6 @@ Suites: noble noble-updates noble-security
 Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 '       >     /etc/apt/sources.list.d/ubuntu.sources
-# Comprehensive R Archive Network mirror sources
 echo    '
 https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc
 https://packages.microsoft.com/keys/microsoft.asc
@@ -15,9 +14,10 @@ wget    --continue      --directory-prefix    /etc/apt/trusted.gpg.d/
 
 
 
+# Comprehensive R Archive Network mirror sources
 echo    'deb https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'                     >    /etc/apt/sources.list.d/cran40.list
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/ stable main'     >    /etc/apt/sources.list.d/vscode.list
-apt update
+apt     update
 
 
 
