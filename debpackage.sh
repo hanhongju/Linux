@@ -6,10 +6,12 @@ https://github.com/balena-io/etcher/releases/download/v2.1.0/balena-etcher_2.1.0
 https://dldir1v6.qq.com/weixin/Universal/Linux/WeChatLinux_x86_64.deb
 https://download1.rstudio.org/electron/jammy/amd64/rstudio-2024.12.1-563-amd64.deb
 https://dl.hostbuf.com/finalshell3/finalshell_linux_x64.deb
+https://github.com/Eugeny/tabby/releases/download/v1.0.223/tabby-1.0.223-linux-arm64.deb
 '       >      download.txt
 xargs   --max-args 1        --max-procs 10   --arg-file   download.txt        \
 curl    --socks5-hostname   127.0.0.1:8000   --location   --continue-at -     --remote-name
-DEBIAN_FRONTEND=noninteractive   apt   -y   install   ./v2rayN-linux-64.deb   ./WeChatLinux_x86_64.deb   ./balena-etcher_2.1.0_amd64.deb   ./rstudio-2024.12.1-563-amd64.deb     ./finalshell_linux_x64.deb
+DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
+        ./v2rayN-linux-64.deb   ./WeChatLinux_x86_64.deb   ./balena-etcher_2.1.0_amd64.deb   ./rstudio-2024.12.1-563-amd64.deb     ./finalshell_linux_x64.deb  ./tabby-1.0.223-linux-arm64.deb
 
 
 
