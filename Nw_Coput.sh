@@ -22,7 +22,7 @@ DEBIAN_FRONTEND=noninteractive   apt     -y     install   \
         wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
         hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils steam thunderbird code  \
         handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre   \
-        krita krita-l10n
+        krita krita-l10n gimp
 apt     -y     autoremove
 ubuntu-drivers autoinstall
 echo    '
