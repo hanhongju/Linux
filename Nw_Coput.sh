@@ -13,6 +13,7 @@ curl    --remote-name   --location       --continue-at -       --socks5-hostname
 
 
 
+
 # Comprehensive R Archive Network mirror sources
 echo    'deb https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'                     >    /etc/apt/sources.list.d/cran40.list
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/ stable main'     >    /etc/apt/sources.list.d/vscode.list
