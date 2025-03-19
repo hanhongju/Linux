@@ -1,4 +1,4 @@
-$env:HTTPS_PROXY="http://127.0.0.1:8001"
+$env:HTTPS_PROXY="http://127.0.0.1:5001"
 https://github.com/hanhongju/Ubuntu/tree/main
 
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
