@@ -25,11 +25,6 @@ DEBIAN_FRONTEND=noninteractive   apt     -y     install   \
         krita krita-l10n gimp
 apt     -y     autoremove
 ubuntu-drivers autoinstall
-echo    '
-0 1 * * *      apt           -y          update
-0 2 * * *      apt           -y          full-upgrade
-0 3 * * *      apt           -y          autoremove
-'       |      crontab
 netstat        -plnt
 
 
