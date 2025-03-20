@@ -10,12 +10,13 @@ https://packages.microsoft.com/keys/microsoft.asc
 '       >      trustedkey.txt
 xargs   --max-args 1        --max-procs 10        --arg-file trustedkey.txt      \
 curl    --location          --continue-at -       --socks5-hostname 127.0.0.1:5000      --output-dir /etc/apt/trusted.gpg.d/       --remote-name
-
-
-
 # Comprehensive R Archive Network mirror sources
 echo    'deb https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'                     >    /etc/apt/sources.list.d/cran40.list
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/ stable main'     >    /etc/apt/sources.list.d/vscode.list
+
+
+
+
 apt     update
 dpkg    -a     --configure
 DEBIAN_FRONTEND=noninteractive   apt     -y     install   \
