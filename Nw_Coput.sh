@@ -11,6 +11,7 @@ echo    '
 https://mirrors.ustc.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc
 https://packages.microsoft.com/keys/microsoft.asc
 '       >      trustedkey.txt
+apt     update   &&   apt   -y   install   curl
 xargs   --max-args 1        --max-procs 10        --arg-file trustedkey.txt      \
 curl    --location          --continue-at -       --socks5-hostname 127.0.0.1:5000      --output-dir /etc/apt/trusted.gpg.d/       --remote-name
 
