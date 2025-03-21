@@ -1,5 +1,5 @@
 echo   'Types: deb
-URIs: http://mirrors.ustc.edu.cn/ubuntu/ http://mirrors.aliyun.com/ubuntu/ http://mirrors.163.com/ubuntu/ http://mirrors.tuna.tsinghua.edu.cn/ubuntu/
+URIs: http://mirrors.nju.edu.cn/ubuntu/
 Suites: noble noble-updates noble-security
 Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
@@ -33,4 +33,4 @@ netstat        -plnt
 
 
 # 新电脑安装软件 @ Ubuntu 24.04.2 LTS
-# 镜像源列表https://archlinux.org/download/
+# 镜像源列表 https://archlinux.org/download/
