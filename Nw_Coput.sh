@@ -33,4 +33,3 @@ netstat        -plnt
 
 
 # 新电脑安装软件 @ Ubuntu 24.04.2 LTS
-# 镜像源列表 https://archlinux.org/download/
