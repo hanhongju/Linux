@@ -19,7 +19,7 @@ apt     update
 
 
 
-dpkg    -a       --configure
+
 DEBIAN_FRONTEND=noninteractive   apt   -y   full-upgrade   &&   apt   -y   autoremove
 DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
@@ -47,6 +47,7 @@ echo '
 sed         -i        "s/www.example.com/$site/g"         /etc/trojan/config.json
 systemctl   enable    trojan
 systemctl   restart   trojan
+dpkg        -a   --configure
 echo   '
 https://github.com/2dust/v2rayN/releases/download/7.9.3/v2rayN-linux-64.deb
 https://github.com/balena-io/etcher/releases/download/v2.1.0/balena-etcher_2.1.0_amd64.deb
