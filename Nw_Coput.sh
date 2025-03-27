@@ -19,7 +19,6 @@ apt     update
 
 
 
-
 DEBIAN_FRONTEND=noninteractive   apt   -y   full-upgrade   &&   apt   -y   autoremove
 DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
