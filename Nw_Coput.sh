@@ -21,7 +21,7 @@ echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/
 apt     update
 dpkg    -a       --configure
 DEBIAN_FRONTEND=noninteractive   apt   -y   full-upgrade   &&   apt   -y   autoremove
-DEBIAN_FRONTEND=noninteractive   apt   -y   install    \ 
+DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
         hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils steam thunderbird code  \
         handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre   \
