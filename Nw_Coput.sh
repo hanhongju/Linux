@@ -26,7 +26,6 @@ DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre   \
         krita krita-l10n gimp trojan
 ubuntu-drivers   autoinstall
-netstat          -plnt
 
 
 
@@ -61,6 +60,7 @@ DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         ./v2rayN-linux-64.deb   ./WeChatLinux_x86_64.deb   ./balena-etcher_2.1.0_amd64.deb  \
         ./rstudio-2024.12.1-563-amd64.deb   ./tabby-1.0.223-linux-x64.deb                   \
         ./softmaker-freeoffice-2024_1224-01_amd64.deb
+netstat -plnt
 
 
 
