@@ -1,11 +1,15 @@
-echo    'Server = https://mirrors.nju.edu.cn/manjaro/stable/$repo/$arch'        >    /etc/pacman.d/mirrorlist
-pacman  --sync -yy
-pacman  --sync --noconfirm curl
+echo    '
+Server = https://mirrors.ustc.edu.cn/manjaro/stable/$repo/$arch
+Server = https://mirrors.jlu.edu.cn/manjaro/stable/$repo/$arch
+Server = https://mirrors.pku.edu.cn/manjaro/stable/$repo/$arch
+'        >    /etc/pacman.d/mirrorlist
+pacman  -Syy
+pacman  -Syu libcurl
+pacman  -S libcurl4
 
+pacman-mirrors -c China -m rank
 
-
-
-
+pacman-mirrors -c China
 
 
 
