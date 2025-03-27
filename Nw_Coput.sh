@@ -14,6 +14,7 @@ xargs   --max-args 1        --max-procs 10        --arg-file trustedkey.txt     
 curl    --location          --continue-at -       --output-dir /etc/apt/trusted.gpg.d/       --remote-name
 echo    'deb https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'                      >    /etc/apt/sources.list.d/cran40.list
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/ stable main'     >    /etc/apt/sources.list.d/vscode.list
+apt     update
 
 
 
