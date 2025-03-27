@@ -9,23 +9,23 @@ https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc
 https://packages.microsoft.com/keys/microsoft.asc
 '       >      trustedkey.txt
 apt     update   &&   apt   -y   install   curl
+ubuntu-drivers   autoinstall
 xargs   --max-args 1        --max-procs 10        --arg-file trustedkey.txt      \
 curl    --location          --continue-at -       --output-dir /etc/apt/trusted.gpg.d/       --remote-name
 # Comprehensive R Archive Network mirror sources
 echo    'deb https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'                      >    /etc/apt/sources.list.d/cran40.list
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/ stable main'     >    /etc/apt/sources.list.d/vscode.list
+
+
+
+
 apt     update
-
-
-
-
 DEBIAN_FRONTEND=noninteractive   apt   -y   full-upgrade   &&   apt   -y   autoremove
 DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
         hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils steam thunderbird code  \
         handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre   \
         krita krita-l10n gimp trojan
-ubuntu-drivers   autoinstall
 
 
 
