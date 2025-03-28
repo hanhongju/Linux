@@ -26,7 +26,7 @@ skip_if_unavailable=False
 '  >   /etc/yum.repos.d/fedora-updates.repo
 dnf check-update
 dnf -y install brasero rhythmbox smplayer net-tools libreoffice hashdeep gparted samba qbittorrent cifs-utils thunderbird \
-               dirmngr cmake calibre krita gimp trojan R libxml2-devel libcurl-devel
+               dirmngr cmake calibre krita gimp trojan R libxml2-devel libcurl-devel fontconfig-devel
 
 
 
