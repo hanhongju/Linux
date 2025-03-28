@@ -27,7 +27,6 @@ skip_if_unavailable=False
 dnf check-update
 dnf install -y brasero rhythmbox smplayer net-tools libreoffice hashdeep gparted samba qbittorrent cifs-utils thunderbird \
                dirmngr cmake calibre krita gimp trojan
-dnf upgrade -y
 
 
 
@@ -48,6 +47,7 @@ echo '
 sed         -i        "s/www.example.com/$site/g"         /etc/trojan/config.json
 systemctl   enable    trojan
 systemctl   restart   trojan
+dnf    upgrade -y
 echo   '
 https://vscode.download.prss.microsoft.com/dbazure/download/stable/ddc367ed5c8936efe395cffeec279b04ffd7db78/code-1.98.2-1741788968.el8.x86_64.rpm
 '       >      download.txt
