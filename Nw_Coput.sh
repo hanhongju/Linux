@@ -14,10 +14,6 @@ curl    --location          --continue-at -       --output-dir /etc/apt/trusted.
 # Comprehensive R Archive Network mirror sources
 echo    'deb https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'                      >    /etc/apt/sources.list.d/cran40.list
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/ stable main'     >    /etc/apt/sources.list.d/vscode.list
-
-
-
-
 apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   full-upgrade   &&   apt   -y   autoremove
 DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
