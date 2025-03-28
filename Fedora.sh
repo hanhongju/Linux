@@ -25,7 +25,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
 skip_if_unavailable=False
 '  >   /etc/yum.repos.d/fedora-updates.repo
 dnf check-update
-dnf install -y brasero rhythmbox smplayer net-tools libreoffice hashdeep gparted samba qbittorrent cifs-utils thunderbird \
+dnf -y install brasero rhythmbox smplayer net-tools libreoffice hashdeep gparted samba qbittorrent cifs-utils thunderbird \
                dirmngr cmake calibre krita gimp trojan
 
 
@@ -47,13 +47,13 @@ echo '
 sed         -i        "s/www.example.com/$site/g"         /etc/trojan/config.json
 systemctl   enable    trojan
 systemctl   restart   trojan
-dnf    upgrade -y
+dnf    -y   upgrade
 echo   '
 https://vscode.download.prss.microsoft.com/dbazure/download/stable/ddc367ed5c8936efe395cffeec279b04ffd7db78/code-1.98.2-1741788968.el8.x86_64.rpm
 '       >      download.txt
 xargs   --max-args 1        --max-procs 10        --arg-file download.txt        \
 curl    --location          --continue-at -       --socks5-hostname 127.0.0.1:4000      --remote-name
-dnf     install   -y     ./code-1.98.2-1741788968.el8.x86_64.rpm
+dnf     -y     install      ./code-1.98.2-1741788968.el8.x86_64.rpm
 netstat -plnt
 
 
