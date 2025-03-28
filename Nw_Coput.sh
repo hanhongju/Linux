@@ -24,7 +24,6 @@ DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils steam thunderbird code  \
         handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre   \
         krita krita-l10n gimp trojan
-ubuntu-drivers   autoinstall
 
 
 
@@ -46,6 +45,7 @@ sed         -i        "s/www.example.com/$site/g"         /etc/trojan/config.jso
 systemctl   enable    trojan
 systemctl   restart   trojan
 dpkg        -a   --configure
+ubuntu-drivers   autoinstall
 echo   '
 https://github.com/2dust/v2rayN/releases/download/7.9.3/v2rayN-linux-64.deb
 https://github.com/balena-io/etcher/releases/download/v2.1.0/balena-etcher_2.1.0_amd64.deb
