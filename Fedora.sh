@@ -1,3 +1,4 @@
+dnf-3 config-manager --set-disabled '*'
 echo '
 [fedora]
 name=Fedora $releasever - $basearch
@@ -10,8 +11,6 @@ type=rpm
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
 skip_if_unavailable=False
-'  >   /etc/yum.repos.d/fedora.repo
-echo '
 [updates]
 name=Fedora $releasever - $basearch - Updates
 baseurl=https://mirrors.nju.edu.cn/fedora/updates/$releasever/Everything/$basearch/
@@ -23,7 +22,7 @@ gpgcheck=1
 metadata_expire=6h
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
 skip_if_unavailable=False
-'  >   /etc/yum.repos.d/fedora-updates.repo
+'  >   /etc/yum.repos.d/nju.repo
 dnf check-update
 dnf -y install brasero rhythmbox smplayer net-tools libreoffice hashdeep gparted samba qbittorrent cifs-utils thunderbird \
                dirmngr cmake calibre krita gimp trojan R libxml2-devel libcurl-devel fontconfig-devel libjpeg-devel
