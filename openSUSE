@@ -1,8 +1,19 @@
-zypper mr -da
-zypper ar -cfg 'https://mirror.nju.edu.cn/opensuse/tumbleweed/repo/oss/' lzuoss-oss
-zypper ar -cfg 'https://mirror.nju.edu.cn/opensuse/tumbleweed/repo/non-oss/' lzuoss-non-oss
-zypper ref
-zypper  install brasero rhythmbox smplayer net-tools libreoffice hashdeep gparted samba qbittorrent cifs-utils thunderbird \
+rm     -rf    /etc/zypp/repos.d/*
+echo   '
+[nju-oss]
+enabled=1
+autorefresh=1
+baseurl=https://mirror.nju.edu.cn/opensuse/tumbleweed/repo/oss/
+gpgcheck=1
+[nju-non-oss]
+enabled=1
+autorefresh=1
+baseurl=https://mirror.nju.edu.cn/opensuse/tumbleweed/repo/non-oss/
+type=rpm-md
+gpgcheck=1
+'   >    /etc/zypp/repos.d/nju.repo
+zypper refresh
+zypper --non-interactive install brasero rhythmbox smplayer net-tools libreoffice hashdeep gparted samba qbittorrent cifs-utils thunderbird \
                dirmngr cmake calibre krita gimp trojan R libxml2-devel libcurl-devel fontconfig-devel libjpeg-devel
 
 
@@ -12,3 +23,4 @@ zypper  install brasero rhythmbox smplayer net-tools libreoffice hashdeep gparte
 
 
 # 新电脑安装软件 @ openSUSE Tumbleweed
+# 参考文献：https://zhuanlan.zhihu.com/p/609450361
