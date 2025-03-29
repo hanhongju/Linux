@@ -22,7 +22,7 @@ gpgcheck=1
 metadata_expire=6h
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
 skip_if_unavailable=False
-'  >   /etc/yum.repos.d/nju.repo
+'  >   /etc/yum.repos.d/nju-fedora-update.repo
 dnf check-update
 dnf -y install brasero rhythmbox smplayer net-tools libreoffice hashdeep gparted samba qbittorrent cifs-utils thunderbird \
                dirmngr cmake calibre krita gimp trojan R libxml2-devel libcurl-devel fontconfig-devel libjpeg-devel
