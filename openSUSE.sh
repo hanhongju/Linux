@@ -13,8 +13,8 @@ type=rpm-md
 gpgcheck=1
 '   >    /etc/zypp/repos.d/nju.repo
 zypper refresh
-zypper -n install brasero rhythmbox smplayer libreoffice hashdeep gparted qbittorrent  \
-                  cmake calibre krita gimp trojan R libxml2-devel libcurl-devel fontconfig-devel
+zypper -n install brasero rhythmbox smplayer libreoffice hashdeep gparted qbittorrent gcc  \
+                  cmake calibre krita gimp trojan R-base libxml2-devel libcurl-devel fontconfig-devel
 
 
 
