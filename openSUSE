@@ -1,4 +1,5 @@
 rm     -rf    /etc/zypp/repos.d/*
+zypper mr -da
 echo   '
 [nju-oss]
 enabled=1
