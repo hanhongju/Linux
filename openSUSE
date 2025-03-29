@@ -1,5 +1,5 @@
 rm     -rf    /etc/zypp/repos.d/*
-zypper mr -da
+zypper modifyrepo --disable --all
 echo   '
 [nju-oss]
 enabled=1
