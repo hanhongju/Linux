@@ -1,5 +1,5 @@
 echo   'deb https://mirror.nju.edu.cn/linuxmint/ wilma main upstream import backport'   >   /etc/apt/sources.list.d/official-package-repositories.list
-apt     update   &&   apt   -y   install   curl
+apt     update   &&   apt   install   -y   curl
 echo    '
 https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc
 https://packages.microsoft.com/keys/microsoft.asc
@@ -10,7 +10,7 @@ curl    --location          --continue-at -       --output-dir /etc/apt/trusted.
 echo    'deb https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'                      >    /etc/apt/sources.list.d/cran40.list
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/ stable main'     >    /etc/apt/sources.list.d/vscode.list
 rm      -rf      /etc/apt/preferences.d/*
-apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
+apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   install   -y   \
         wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
         hashdeep p7zip-full gparted usb-creator-gtk samba qbittorrent cifs-utils steam code firefox thunderbird  \
         handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre   \
@@ -37,7 +37,7 @@ echo '
 sed         -i        "s/www.example.com/$site/g"         /etc/trojan/config.json
 systemctl   enable    trojan
 systemctl   restart   trojan
-apt         update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   full-upgrade   &&   apt   -y   autoremove
+apt         update   &&   DEBIAN_FRONTEND=noninteractive   apt   full-upgrade   -y   &&   apt   autoremove   -y
 echo   '
 https://github.com/2dust/v2rayN/releases/download/7.9.3/v2rayN-linux-64.deb
 https://github.com/balena-io/etcher/releases/download/v2.1.0/balena-etcher_2.1.0_amd64.deb
@@ -48,7 +48,7 @@ https://www.softmaker.net/down/softmaker-freeoffice-2024_1224-01_amd64.deb
 '       >      download.txt
 xargs   --max-args 1        --max-procs 10        --arg-file download.txt        \
 curl    --location          --continue-at -       --socks5-hostname 127.0.0.1:4000      --remote-name
-DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
+DEBIAN_FRONTEND=noninteractive   apt   install   -y   \
         ./v2rayN-linux-64.deb   ./WeChatLinux_x86_64.deb   ./balena-etcher_2.1.0_amd64.deb  \
         ./rstudio-2024.12.1-563-amd64.deb   ./tabby-1.0.223-linux-x64.deb                   \
         ./softmaker-freeoffice-2024_1224-01_amd64.deb
