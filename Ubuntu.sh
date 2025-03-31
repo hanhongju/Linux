@@ -3,7 +3,7 @@ URIs: http://mirrors.nju.edu.cn/ubuntu/
 Suites: noble noble-updates noble-security
 Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
-'       >     /etc/apt/sources.list.d/ubuntu.sources
+'       >     /etc/apt/sources.list.d/nju.sources
 apt     update   &&   apt   -y   install   curl
 echo    '
 https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc
