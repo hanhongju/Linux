@@ -5,15 +5,8 @@ Suites: noble noble-updates noble-security noble-backports
 Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 '       >     /etc/apt/sources.list.d/ubuntu.sources
-apt     update   &&   apt   -y   install   curl
-echo    '
-https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc
-https://packages.microsoft.com/keys/microsoft.asc
-'       >      trustedkey.txt
-xargs   --max-args 1        --max-procs 10        --arg-file trustedkey.txt      \
-curl    --location          --continue-at -       --output-dir /etc/apt/trusted.gpg.d/       --remote-name
-# Comprehensive R Archive Network mirror sources
-#echo    'deb https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'                           >    /etc/apt/sources.list.d/cran40.list
+apt     update   &&   apt   -y   install   wget
+wget    -c   https://packages.microsoft.com/keys/microsoft.asc    --directory-prefix    /etc/apt/trusted.gpg.d/
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/      stable main'     >    /etc/apt/sources.list.d/vscode.list
 apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
