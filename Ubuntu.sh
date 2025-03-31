@@ -1,6 +1,6 @@
 echo   'Types: deb
-URIs: http://mirrors.nju.edu.cn/ubuntu/
-Suites: noble noble-updates noble-security
+URIs: https://mirrors.cernet.edu.cn/ubuntu/
+Suites: noble noble-updates noble-security noble-backports
 Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 '       >     /etc/apt/sources.list.d/nju.sources
