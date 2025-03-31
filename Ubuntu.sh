@@ -1,3 +1,4 @@
+# 虚拟机不能复制命令手动安装 apt install open-vm-tools-desktop
 echo   'Types: deb
 URIs: https://mirrors.nju.edu.cn/ubuntu/
 Suites: noble noble-updates noble-security noble-backports
