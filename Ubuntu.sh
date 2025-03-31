@@ -1,5 +1,5 @@
 echo   'Types: deb
-URIs: https://mirrors.cernet.edu.cn/ubuntu/
+URIs: https://mirrors.nju.edu.cn/ubuntu/
 Suites: noble noble-updates noble-security noble-backports
 Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
