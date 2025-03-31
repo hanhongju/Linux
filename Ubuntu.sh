@@ -6,7 +6,7 @@ Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 '       >     /etc/apt/sources.list.d/ubuntu.sources
 apt     update   &&   apt   -y   install   wget
-wget    -c   https://packages.microsoft.com/keys/microsoft.asc    --directory-prefix    /etc/apt/trusted.gpg.d/
+wget    --continue    https://packages.microsoft.com/keys/microsoft.asc    --directory-prefix    /etc/apt/trusted.gpg.d/
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/      stable main'     >    /etc/apt/sources.list.d/vscode.list
 apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
