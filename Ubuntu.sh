@@ -25,8 +25,6 @@ ubuntu-drivers   autoinstall
 
 
 
-
-
 site=alihk.hanhongju.com
 echo '
 {"run_type"    : "client"
