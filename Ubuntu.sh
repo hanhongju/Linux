@@ -9,6 +9,7 @@ apt     update   &&   apt   -y   install   wget
 wget    -c    https://packages.microsoft.com/keys/microsoft.asc                       -P     /etc/apt/trusted.gpg.d/
 wget    -c    https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc    -P     /etc/apt/trusted.gpg.d/
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/      stable main'     >    /etc/apt/sources.list.d/vscode.list
+# 官方源中的 R 版本较低，会造成错误
 echo    'deb https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'                           >    /etc/apt/sources.list.d/cran40.list
 apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
