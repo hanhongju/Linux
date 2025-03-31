@@ -43,7 +43,7 @@ echo '
 sed         -i        "s/www.example.com/$site/g"         /etc/trojan/config.json
 systemctl   enable    trojan
 systemctl   restart   trojan
-apt         update   &&   DEBIAN_FRONTEND=noninteractive   apt   full-upgrade   -y   &&   apt   autoremove   -y
+apt         update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   full-upgrade   &&   apt   -y   autoremove
 echo   '
 https://github.com/2dust/v2rayN/releases/download/7.9.3/v2rayN-linux-64.deb
 https://github.com/balena-io/etcher/releases/download/v2.1.0/balena-etcher_2.1.0_amd64.deb
@@ -54,7 +54,7 @@ https://www.softmaker.net/down/softmaker-freeoffice-2024_1224-01_amd64.deb
 '       >      download.txt
 xargs   --max-args 1        --max-procs 10        --arg-file download.txt        \
 curl    --location          --continue-at -       --socks5-hostname 127.0.0.1:4000      --remote-name
-DEBIAN_FRONTEND=noninteractive   apt   install   -y   \
+DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         ./v2rayN-linux-64.deb   ./WeChatLinux_x86_64.deb   ./balena-etcher_2.1.0_amd64.deb  \
         ./rstudio-2024.12.1-563-amd64.deb   ./tabby-1.0.223-linux-x64.deb                   \
         ./softmaker-freeoffice-2024_1224-01_amd64.deb
