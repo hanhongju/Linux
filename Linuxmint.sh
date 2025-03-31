@@ -1,9 +1,4 @@
-echo   'Types: deb
-URIs: http://mirrors.nju.edu.cn/ubuntu/
-Suites: noble noble-updates noble-security
-Components: main restricted universe multiverse
-Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
-'       >     /etc/apt/sources.list.d/nju.sources
+echo   'deb https://mirror.nju.edu.cn/linuxmint/ wilma main upstream import backport'   >   /etc/apt/sources.list.d/official-package-repositories.list
 apt     update   &&   apt   -y   install   curl
 echo    '
 https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc
