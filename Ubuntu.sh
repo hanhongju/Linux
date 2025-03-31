@@ -16,7 +16,7 @@ echo    'deb https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'    
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/ stable main'     >    /etc/apt/sources.list.d/vscode.list
 apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
-        hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils steam thunderbird code  \
+        hashdeep p7zip-full gparted usb-creator-gtk samba qbittorrent cifs-utils steam code  \
         handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre   \
         krita krita-l10n gimp trojan
 dpkg        -a   --configure
