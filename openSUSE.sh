@@ -14,7 +14,7 @@ gpgcheck=1
 '   >    /etc/zypp/repos.d/nju.repo
 zypper refresh
 zypper -n install brasero rhythmbox smplayer libreoffice hashdeep gparted qbittorrent cmake krita gimp \
-                  trojan R-base libxml2-devel libcurl-devel fontconfig-devel gcc gcc-c++ gcc-fortran libjpeg-devel libpng-devel
+                  trojan R-base fontconfig-devel gcc gcc-c++ libxml2-devel libcurl-devel gcc-fortran libjpeg-devel libpng-devel
 zypper -n update
 
 
