@@ -68,3 +68,4 @@ netstat -plnt
 
 
 # 新电脑安装软件 @ Fedora 41
+# 镜像站 https://mirror.nju.edu.cn/mirrorz-help/fedora/
