@@ -21,7 +21,5 @@ zypper -n update
 
 
 
-
-
 # 新电脑安装软件 @ openSUSE Tumbleweed
 # 参考文献：https://zhuanlan.zhihu.com/p/609450361
