@@ -2,7 +2,7 @@ dnf-3 config-manager --set-disabled '*'
 echo '
 [fedora]
 name=Fedora $releasever - $basearch
-baseurl=https://mirrors.nju.edu.cn/fedora/releases/$releasever/Everything/$basearch/os/
+baseurl=https://mirrors.sustech.edu.cn/fedora/releases/$releasever/Everything/$basearch/os/
 enabled=1
 countme=1
 metadata_expire=7d
@@ -15,7 +15,7 @@ skip_if_unavailable=False
 echo '
 [updates]
 name=Fedora $releasever - $basearch - Updates
-baseurl=https://mirrors.nju.edu.cn/fedora/updates/$releasever/Everything/$basearch/
+baseurl=https://mirrors.sustech.edu.cn/fedora/updates/$releasever/Everything/$basearch/
 enabled=1
 countme=1
 repo_gpgcheck=0
