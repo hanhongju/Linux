@@ -59,4 +59,4 @@ netstat -plnt
 
 
 # 新电脑安装软件 @ Ubuntu 24.04.2 LTS
-# 源列表 https://mirror.nju.edu.cn/mirrorz-help/ubuntu/?mirror=NJU
+# 源列表 https://mirror.nju.edu.cn/mirrorz-help/ubuntu/
