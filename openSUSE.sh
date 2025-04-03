@@ -11,9 +11,9 @@ autorefresh=1
 baseurl=https://mirror.sustech.edu.cn/opensuse/tumbleweed/repo/non-oss/
 type=rpm-md
 gpgcheck=1
-'   >    /etc/zypp/repos.d/sustech.repo
-zypper refresh
-zypper --non-interactive install brasero rhythmbox smplayer libreoffice hashdeep gparted qbittorrent cmake krita gimp trojan R-base  \
+'   >   /etc/zypp/repos.d/sustech.repo
+zypper  refresh
+zypper  --non-interactive install brasero rhythmbox smplayer libreoffice hashdeep gparted qbittorrent cmake krita gimp trojan R-base  \
                                  gcc gcc-c++ gcc-fortran harfbuzz-devel fribidi-devel freetype-devel fontconfig-devel                \
                                  libxml2-devel libcurl-devel libjpeg-devel libpng-devel libtiff-devel net-tools
 
@@ -47,10 +47,10 @@ https://github.com/balena-io/etcher/releases/download/v2.1.0/balena-etcher-2.1.0
 '       >      download.txt
 xargs   --max-args 1        --max-procs 10        --arg-file download.txt        \
 curl    --location          --continue-at -       --socks5-hostname 127.0.0.1:4000      --remote-name
-zypper --non-interactive install  ./code-1.98.2-1741788968.el8.x86_64.rpm  ./tabby-1.0.223-linux-x64.rpm \
+zypper  --non-interactive install  ./code-1.98.2-1741788968.el8.x86_64.rpm  ./tabby-1.0.223-linux-x64.rpm \
                                   ./WeChatLinux_x86_64.rpm ./softmaker-freeoffice-2024-1224.x86_64.rpm   \
                                   ./rstudio-2024.12.1-563-x86_64.rpm ./balena-etcher-2.1.0-1.x86_64.rpm
-ss     --processes  --listening  --numeric  --tcp
+ss      --processes  --listening  --numeric  --tcp
 
 
 
