@@ -15,7 +15,7 @@ gpgcheck=1
 zypper refresh
 zypper -n install brasero rhythmbox smplayer libreoffice hashdeep gparted qbittorrent cmake krita gimp trojan R-base  \
                   gcc gcc-c++ gcc-fortran harfbuzz-devel fribidi-devel freetype-devel fontconfig-devel                \
-                  libxml2-devel libcurl-devel libjpeg-devel libpng-devel libtiff-devel
+                  libxml2-devel libcurl-devel libjpeg-devel libpng-devel libtiff-devel net-tools-deprecated
 zypper -n update
 
 
