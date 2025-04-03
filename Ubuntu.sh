@@ -1,7 +1,7 @@
 # 虚拟机不能复制命令手动安装 apt install open-vm-tools-desktop
 echo   'Types: deb
 URIs: https://mirrors.nju.edu.cn/ubuntu/
-Suites: noble noble-updates noble-security noble-backports
+Suites: oracular oracular-updates oracular-security oracular-backports
 Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 '       >     /etc/apt/sources.list.d/ubuntu.sources
@@ -58,5 +58,5 @@ netstat -plnt
 
 
 
-# 新电脑安装软件 @ Ubuntu 24.04.2 LTS
+# 新电脑安装软件 @ Ubuntu 24.10
 # 源列表 https://mirror.nju.edu.cn/mirrorz-help/ubuntu/
