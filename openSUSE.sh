@@ -14,8 +14,8 @@ gpgcheck=1
 '   >   /etc/zypp/repos.d/nju.repo
 zypper  refresh
 zypper  --non-interactive install brasero rhythmbox smplayer libreoffice hashdeep gparted qbittorrent cmake krita gimp trojan R-base  \
-                                 gcc gcc-c++ gcc-fortran harfbuzz-devel fribidi-devel freetype-devel fontconfig-devel                \
-                                 libxml2-devel libcurl-devel libjpeg-devel libpng-devel libtiff-devel net-tools
+                                 gcc gcc-c++ gcc-fortran harfbuzz-devel fribidi-devel freetype2-devel fontconfig-devel                \
+                                 libxml2-devel libcurl-devel libjpeg62-devel libpng16-compat-devel libtiff-devel net-tools
 zypper  --non-interactive update
 ss      --processes  --listening  --numeric  --tcp
 
