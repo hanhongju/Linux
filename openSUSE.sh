@@ -3,15 +3,15 @@ echo   '
 [nju-oss]
 enabled=1
 autorefresh=1
-baseurl=https://mirror.sustech.edu.cn/opensuse/tumbleweed/repo/oss/
+baseurl=https://mirror.nju.edu.cn/opensuse/tumbleweed/repo/oss/
 gpgcheck=1
 [nju-non-oss]
 enabled=1
 autorefresh=1
-baseurl=https://mirror.sustech.edu.cn/opensuse/tumbleweed/repo/non-oss/
+baseurl=https://mirror.nju.edu.cn/opensuse/tumbleweed/repo/non-oss/
 type=rpm-md
 gpgcheck=1
-'   >   /etc/zypp/repos.d/sustech.repo
+'   >   /etc/zypp/repos.d/nju.repo
 zypper  refresh
 zypper  --non-interactive install brasero rhythmbox smplayer libreoffice hashdeep gparted qbittorrent cmake krita gimp trojan R-base  \
                                  gcc gcc-c++ gcc-fortran harfbuzz-devel fribidi-devel freetype-devel fontconfig-devel                \
