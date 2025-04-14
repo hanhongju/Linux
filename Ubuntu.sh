@@ -17,7 +17,7 @@ apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre   \
         krita krita-l10n gimp trojan libharfbuzz-dev libfribidi-dev
 dpkg        -a   --configure
-# ubuntu-drivers   autoinstall
+ubuntu-drivers   autoinstall
 
 
 
