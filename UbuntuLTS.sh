@@ -5,9 +5,9 @@ Suites: noble noble-updates noble-security noble-backports
 Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 '       >     /etc/apt/sources.list.d/ubuntu.sources
-apt     update   &&   apt   -y   install   wget
-wget    -c    https://packages.microsoft.com/keys/microsoft.asc                       -P     /etc/apt/trusted.gpg.d/
-wget    -c    https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc    -P     /etc/apt/trusted.gpg.d/
+apt     update   &&   apt   -y   install   curl
+curl    --location  --continue-at -  --output-dir /etc/apt/trusted.gpg.d/  --remote-name https://packages.microsoft.com/keys/microsoft.asc
+curl    --location  --continue-at -  --output-dir /etc/apt/trusted.gpg.d/  --remote-name https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/      stable main'     >    /etc/apt/sources.list.d/vscode.list
 # 官方源中的 r-base 版本较低，会造成错误
 echo    'deb https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'                           >    /etc/apt/sources.list.d/cran40.list
