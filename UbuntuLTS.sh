@@ -18,8 +18,8 @@ apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils thunderbird code  \
         handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre   \
         krita krita-l10n gimp trojan libharfbuzz-dev libfribidi-dev virtualbox
-wget    -c    https://download.virtualbox.org/virtualbox/7.0.16/Oracle_VM_VirtualBox_Extension_Pack-7.0.16.vbox-extpack
-VBoxManage    extpack install --replace --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c Oracle_VM_VirtualBox_Extension_Pack-7.0.16.vbox-extpack
+wget    -c       https://download.virtualbox.org/virtualbox/7.0.16/Oracle_VM_VirtualBox_Extension_Pack-7.0.16.vbox-extpack
+VBoxManage       extpack install --replace --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c Oracle_VM_VirtualBox_Extension_Pack-7.0.16.vbox-extpack
 dpkg    -a       --configure
 ubuntu-drivers   autoinstall
 
