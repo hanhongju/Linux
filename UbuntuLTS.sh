@@ -1,7 +1,7 @@
 # 虚拟机不能复制命令手动安装 apt install open-vm-tools-desktop
 echo   'Types: deb
-URIs: https://mirrors.nju.edu.cn/ubuntu/
-Suites: noble noble-updates noble-security noble-backports
+URIs: https://mirrors.sustech.edu.cn/ubuntu
+Suites: noble noble-updates noble-backports noble-security
 Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 '       >     /etc/apt/sources.list.d/ubuntu.sources
