@@ -15,7 +15,7 @@ echo    'deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian/ nob
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/ stable main'          >    /etc/apt/sources.list.d/vscode.list
 apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
-        hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils thunderbird code  \
+        hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils thunderbird code        \
         handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre   \
         krita krita-l10n gimp trojan libharfbuzz-dev libfribidi-dev virtualbox
 wget    -c       https://download.virtualbox.org/virtualbox/7.0.16/Oracle_VM_VirtualBox_Extension_Pack-7.0.16.vbox-extpack
