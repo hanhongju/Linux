@@ -6,11 +6,11 @@ Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 '       >     /etc/apt/sources.list.d/ubuntu.sources
 apt     update   &&   apt   -y   install   wget
-wget    -c    https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc    -P   /etc/apt/trusted.gpg.d/
-wget    -c    https://www.virtualbox.org/download/oracle_vbox_2016.asc                -P   /etc/apt/trusted.gpg.d/
-wget    -c    https://packages.microsoft.com/keys/microsoft.asc                       -P   /etc/apt/trusted.gpg.d/
+wget    -c    https://mirrors.sustech.edu.cn/CRAN/bin/linux/ubuntu/marutter_pubkey.asc    -P   /etc/apt/trusted.gpg.d/
+wget    -c    https://www.virtualbox.org/download/oracle_vbox_2016.asc                    -P   /etc/apt/trusted.gpg.d/
+wget    -c    https://packages.microsoft.com/keys/microsoft.asc                           -P   /etc/apt/trusted.gpg.d/
 # 官方源中的 r-base 版本较低，会造成错误
-echo    'deb https://mirrors.nju.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'                           >    /etc/apt/sources.list.d/cran40.list
+echo    'deb https://mirrors.sustech.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'                       >    /etc/apt/sources.list.d/cran40.list
 echo    'deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian/ noble contrib'            >    /etc/apt/sources.list.d/virtualbox.list
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/ stable main'          >    /etc/apt/sources.list.d/vscode.list
 apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
