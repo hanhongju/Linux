@@ -21,7 +21,6 @@ apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
 wget    -c       https://download.virtualbox.org/virtualbox/7.0.16/Oracle_VM_VirtualBox_Extension_Pack-7.0.16.vbox-extpack
 VBoxManage       extpack install --replace --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c Oracle_VM_VirtualBox_Extension_Pack-7.0.16.vbox-extpack
 dpkg    -a       --configure
-ubuntu-drivers   autoinstall
 
 
 
@@ -42,7 +41,9 @@ echo '
 sed         -i        "s/www.example.com/$site/g"         /etc/trojan/config.json
 systemctl   enable    trojan
 systemctl   restart   trojan
-apt         update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   full-upgrade   &&   apt   -y   autoremove
+apt         update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   full-upgrade
+ubuntu-drivers   autoinstall
+apt   -y   autoremove
 echo   '
 https://github.com/2dust/v2rayN/releases/download/7.9.3/v2rayN-linux-64.deb
 https://github.com/balena-io/etcher/releases/download/v2.1.0/balena-etcher_2.1.0_amd64.deb
