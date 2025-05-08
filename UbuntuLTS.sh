@@ -18,8 +18,6 @@ apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils thunderbird code        \
         handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre   \
         krita krita-l10n gimp trojan libharfbuzz-dev libfribidi-dev virtualbox steam
-wget    -c       https://download.virtualbox.org/virtualbox/7.0.16/Oracle_VM_VirtualBox_Extension_Pack-7.0.16.vbox-extpack
-VBoxManage       extpack install --replace --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c Oracle_VM_VirtualBox_Extension_Pack-7.0.16.vbox-extpack
 dpkg    -a       --configure
 
 
@@ -51,6 +49,7 @@ https://dldir1v6.qq.com/weixin/Universal/Linux/WeChatLinux_x86_64.deb
 https://download1.rstudio.org/electron/jammy/amd64/rstudio-2024.12.1-563-amd64.deb
 https://github.com/Eugeny/tabby/releases/download/v1.0.223/tabby-1.0.223-linux-x64.deb
 https://www.softmaker.net/down/softmaker-freeoffice-2024_1224-01_amd64.deb
+https://download.virtualbox.org/virtualbox/7.0.16/Oracle_VM_VirtualBox_Extension_Pack-7.0.16.vbox-extpack
 '       >      download.txt
 xargs   --max-args 1        --max-procs 10        --arg-file download.txt        \
 curl    --location          --continue-at -       --socks5-hostname 127.0.0.1:4000      --output-dir   ./     --remote-name
@@ -58,7 +57,8 @@ DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
         ./v2rayN-linux-64.deb   ./WeChatLinux_x86_64.deb   ./balena-etcher_2.1.0_amd64.deb  \
         ./rstudio-2024.12.1-563-amd64.deb   ./tabby-1.0.223-linux-x64.deb                   \
         ./softmaker-freeoffice-2024_1224-01_amd64.deb
-netstat -plnt
+VBoxManage extpack install --replace --accept-license=33d7284dc4a0ece381196fda3cfe2ed0e1e8e7ed7f27b9a9ebc4ee22e24bd23c Oracle_VM_VirtualBox_Extension_Pack-7.0.16.vbox-extpack
+netstat    -plnt
 
 
 
