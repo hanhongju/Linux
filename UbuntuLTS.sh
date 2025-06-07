@@ -14,10 +14,10 @@ echo    'deb https://mirrors.sustech.edu.cn/CRAN/bin/linux/ubuntu noble-cran40/'
 echo    'deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian/ noble contrib'            >    /etc/apt/sources.list.d/virtualbox.list
 echo    'deb [arch=amd64,arm64,armhf] https://packages.microsoft.com/repos/code/ stable main'          >    /etc/apt/sources.list.d/vscode.list
 apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
-        wget curl brasero rhythmbox smplayer net-tools libreoffice libreoffice-l10n-zh-cn libreoffice-help-zh-cn \
-        hashdeep p7zip-full firefox gparted usb-creator-gtk samba qbittorrent cifs-utils thunderbird code        \
-        handbrake libcurl4-openssl-dev software-properties-common dirmngr r-base libmagick++-dev cmake calibre   \
-        krita krita-l10n gimp trojan libharfbuzz-dev libfribidi-dev virtualbox steam
+        brasero calibre cifs-utils cmake code curl dirmngr firefox gimp gparted handbrake hashdeep \
+        krita krita-l10n libcurl4-openssl-dev libfribidi-dev libharfbuzz-dev libmagick++-dev libreoffice \
+        libreoffice-help-zh-cn libreoffice-l10n-zh-cn net-tools p7zip-full qbittorrent r-base rhythmbox \
+        samba smplayer software-properties-common steam thunderbird trojan usb-creator-gtk virtualbox wget
 dpkg    -a       --configure
 
 
