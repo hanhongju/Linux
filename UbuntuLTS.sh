@@ -20,7 +20,7 @@ apt     update   &&   DEBIAN_FRONTEND=noninteractive   apt   -y   install   \
                       libreoffice-help-zh-cn libreoffice-l10n-zh-cn libssl-dev net-tools openssl p7zip-full \
                       qbittorrent r-base rhythmbox samba smplayer software-properties-common steam \
                       thunderbird trojan usb-creator-gtk virtualbox wget zlib1g-dev
-dpkg    -a       --configure
+dpkg    -a    --configure
 
 
 
